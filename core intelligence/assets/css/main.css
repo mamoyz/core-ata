@@ -87,12 +87,18 @@ h6 {
   overflow: hidden; }
   #particles-js.product-header {
     background-color: transparent;
-    background: url("../images/image.png"), linear-gradient(28deg, #FF5C66 0%, #730051 100%) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-    #particles-js.product-header .particles-js-canvas-el {
-      display: none; }
+  #particles-js.people-header {
+    background-image: url("../images/people.png");
+    background: linear-gradient(180deg, #BA0065 0%, #FF5C66 100%) 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    #particles-js.people-header:after {
+      display: none !important; }
   #particles-js:after {
     content: " ";
     position: absolute;
@@ -543,6 +549,47 @@ footer {
       background-color: #fff;
       color: #FF5C66; }
 
+.people-header .people-centered {
+  text-align: center;
+  margin-top: 110px; }
+  .people-header .people-centered h1 {
+    color: #FF5C66;
+    font: 700 48px/69px Poppins; }
+  .people-header .people-centered p {
+    font: 400 30px/49px Poppins; }
+
+.people-columns {
+  position: relative;
+  top: -360px;
+  margin-bottom: -120px; }
+  .people-columns .column-title {
+    font: 700 20px/26px Poppins;
+    color: #fff;
+    margin-bottom: 20px; }
+  .people-columns .column-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 22px 33px #0000000D;
+    padding: 18px;
+    height: 100%; }
+    .people-columns .column-content > div {
+      border-bottom: 2px dashed #0000000D;
+      padding: 7px; }
+  .people-columns .column {
+    padding-left: 0 !important;
+    padding-right: 12px !important; }
+
+.people-continue {
+  padding-bottom: 150px; }
+  .people-continue p {
+    font: 700 30px/49px Poppins;
+    color: #0084FF; }
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1315px !important; } }
@@ -577,6 +624,17 @@ footer {
         .about-us-page .about-btns .btn-about div {
           justify-content: center; } }
 @media (max-width: 992px) {
+  .partners .partner-block {
+    padding-right: 20px; }
+
+  .people-header {
+    min-height: 50vh !important; }
+    .people-header .people-centered {
+      margin-top: 60px; }
+
+  .people-continue {
+    padding-bottom: 50px; }
+
   .ready-banner {
     padding: 80px 0; }
     .ready-banner .ready-title {
@@ -585,13 +643,38 @@ footer {
       .ready-banner .ready-title:after {
         display: none; }
     .ready-banner .ready-bg {
-      flex-direction: column; } }
+      flex-direction: column; }
+
+  .people-columns {
+    position: static;
+    padding-top: 30px;
+    margin-bottom: 0; }
+    .people-columns .column {
+      margin-bottom: 40px;
+      padding: 0 15px !important; }
+      .people-columns .column .column-title {
+        color: #000; }
+      .people-columns .column .column-content {
+        height: auto;
+        box-shadow: 0px 0px 21px 8px #0000000D; } }
 @media (max-width: 768px) {
   .about-us-page {
     padding-top: 40px; }
     .about-us-page .about-description {
       margin-top: 25px; } }
 @media (max-width: 767px) {
+  .section .section-title {
+    padding-top: 25px;
+    font: 700 40px/70px Poppins; }
+
+  .different:after {
+    background-size: cover; }
+
+  .contact .contact-title {
+    text-align: center; }
+  .contact .contact-form {
+    padding-left: 0; }
+
   .product-header .product-centered {
     margin-top: 50px; }
 
@@ -622,6 +705,42 @@ footer {
   .page-header .hamburger-btn {
     padding-top: 0 !important; } }
 @media (max-width: 576px) {
+  .submit {
+    display: flex;
+    justify-content: center; }
+
+  .section .block-body {
+    padding: 127px 20px 45px; }
+
+  #particles-js .centered h1 {
+    font: 600 45px/69px Poppins;
+    margin-top: 50px; }
+  #particles-js .centered .find-more {
+    padding: 10px 50px; }
+
+  footer .footer-logo {
+    width: 290px; }
+
+  .product-banner h2 {
+    font: 700 37px/64px Poppins; }
+
+  .ready-banner .request-btn {
+    padding: 15px 45px; }
+
+  .product-header {
+    min-height: 155vh !important; }
+
+  .big-circle {
+    top: -91px;
+    margin-bottom: -80px; }
+
+  .footer-nav {
+    justify-content: flex-start; }
+    .footer-nav .footer-menu ul {
+      flex-direction: column; }
+      .footer-nav .footer-menu ul li {
+        margin-bottom: 20px; }
+
   .about-us-page {
     padding-bottom: 35px; }
     .about-us-page .about-btns {
