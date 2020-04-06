@@ -8,7 +8,8 @@ html, body {
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 a:hover {
   text-decoration: none; }
@@ -39,9 +40,16 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%; }
   #particles-js .main-header nav {
     margin-top: 30px;
-    position: relative; }
+    position: relative;
+    display: flex;
+    align-items: center; }
+    #particles-js .main-header nav .line {
+      width: 55%;
+      height: 1px;
+      background-color: #ccc; }
     #particles-js .main-header nav ul {
-      display: flex; }
+      display: flex;
+      width: 50%; }
       #particles-js .main-header nav ul li:last-child a:after {
         display: none; }
       #particles-js .main-header nav ul li a {
@@ -82,7 +90,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin: 40px 0; }
+  padding-top: 60px;
+  padding-bottom: 25px; }
 .section .block {
   margin-bottom: 30px; }
   .section .block .img-container {
@@ -138,23 +147,27 @@ h1, h2, h3, h4, h5, h6 {
   .different .different-block {
     margin-bottom: 40px; }
     .different .different-block .different-title {
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      font-weight: 600; }
+    .different .different-block p {
+      font-weight: 300; }
 
 .comment {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
   background-color: #F7FAFF; }
   .comment .section-title {
     margin: 0;
-    padding: 60px 0; }
+    padding-top: 80px;
+    padding-bottom: 50px; }
   .comment .customer-pic .person {
     position: relative;
     z-index: 2; }
   .comment .customer-pic .dots {
     position: absolute;
     left: -17px;
-    width: 100px;
+    width: 130px;
     z-index: 1;
-    bottom: -25px; }
+    bottom: -33px; }
   .comment .comment .quote i {
     font-size: 20px;
     color: #377dff; }
@@ -170,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .partners {
   padding-bottom: 50px; }
   .partners .section-title {
-    padding-top: 70px; }
+    padding-top: 100px; }
   .partners .partner-block {
     border-left: 7px solid #FF5C66;
     padding-left: 50px;
