@@ -562,22 +562,27 @@ footer {
   position: relative;
   top: -360px;
   margin-bottom: -120px; }
-  .people-columns .column-title {
-    font: 700 20px/26px Poppins;
-    color: #fff;
-    margin-bottom: 20px; }
-  .people-columns .column-content {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 22px 33px #0000000D;
-    padding: 18px;
-    height: 100%; }
-    .people-columns .column-content > div {
-      border-bottom: 2px dashed #0000000D;
-      padding: 7px; }
-  .people-columns .column {
-    padding-left: 0 !important;
-    padding-right: 12px !important; }
+  .people-columns .columns {
+    display: flex;
+    text-align: center; }
+    .people-columns .columns .column-title {
+      font: 700 20px/26px Poppins;
+      color: #fff;
+      margin-bottom: 20px;
+      padding: 16px;
+      text-align: center; }
+    .people-columns .columns .column-content {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 22px 33px #0000000D;
+      padding: 18px;
+      height: 100%; }
+      .people-columns .columns .column-content > div {
+        border-bottom: 2px dashed #0000000D;
+        padding: 7px; }
+    .people-columns .columns .column {
+      flex: 1;
+      margin-right: 15px; }
 
 .people-continue {
   padding-bottom: 150px; }
@@ -649,14 +654,16 @@ footer {
     position: static;
     padding-top: 30px;
     margin-bottom: 0; }
-    .people-columns .column {
-      margin-bottom: 40px;
-      padding: 0 15px !important; }
-      .people-columns .column .column-title {
-        color: #000; }
-      .people-columns .column .column-content {
-        height: auto;
-        box-shadow: 0px 0px 21px 8px #0000000D; } }
+    .people-columns .columns {
+      flex-direction: column; }
+      .people-columns .columns .column {
+        margin-bottom: 40px;
+        padding: 0 15px !important; }
+        .people-columns .columns .column .column-title {
+          color: #000; }
+        .people-columns .columns .column .column-content {
+          height: auto;
+          box-shadow: 0px 0px 21px 8px #0000000D; } }
 @media (max-width: 768px) {
   .about-us-page {
     padding-top: 40px; }

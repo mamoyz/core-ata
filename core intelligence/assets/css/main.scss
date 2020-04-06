@@ -760,10 +760,15 @@ footer {
 	position: relative;
 	top: -360px;
 	margin-bottom: -120px;
-	.column-title {
+	.columns {
+	    display: flex;
+	    text-align: center;
+		.column-title {
 		font: 700 20px/26px Poppins;
 		color: #fff;
 		margin-bottom: 20px;
+		padding: 16px;
+		text-align: center;
 	}
 	.column-content {
 		background-color: #fff;
@@ -778,9 +783,10 @@ footer {
 
 	}
 	.column {
-			padding-left: 0 !important;
-			padding-right: 12px !important;
+		   flex: 1;
+		   margin-right: 15px;
 		}
+	}
 }
 .people-continue {
 	padding-bottom: 150px;
@@ -890,7 +896,9 @@ footer {
 		position: static;
 		padding-top: 30px;
 		margin-bottom: 0;
-		.column {
+		.columns {
+			flex-direction: column;
+			.column {
 			margin-bottom: 40px;
 			padding: 0 15px !important;
 			.column-title {
@@ -902,6 +910,7 @@ footer {
 				box-shadow: 0px 0px 21px 8px #0000000D;
 			}
 
+		}
 		}
 	}
 }
