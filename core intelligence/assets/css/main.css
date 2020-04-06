@@ -585,6 +585,8 @@ footer {
     .people-columns .columns .column {
       flex: 1;
       margin-right: 15px; }
+      .people-columns .columns .column:last-child {
+        margin-right: 0; }
 
 .people-continue {
   padding-bottom: 150px; }

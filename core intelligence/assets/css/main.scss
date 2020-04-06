@@ -788,6 +788,9 @@ footer {
 	.column {
 		   flex: 1;
 		   margin-right: 15px;
+		   &:last-child {
+		   	margin-right: 0;
+		   }
 		}
 	}
 }
