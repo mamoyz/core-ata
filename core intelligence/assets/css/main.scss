@@ -779,6 +779,9 @@ footer {
 		> div {
 			border-bottom: 2px dashed #0000000D;
 			padding: 7px;
+			&:last-child {
+				border-bottom: none;
+			}
 		}
 
 	}
@@ -908,6 +911,7 @@ footer {
 			.column-content {
 				height: auto;
 				box-shadow: 0px 0px 21px 8px #0000000D;
+				font: 400 18px/26px Lato;
 			}
 
 		}
