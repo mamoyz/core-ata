@@ -9,6 +9,18 @@ $(function() {
         items: 1,
         nav: false,
     });
+     $(".hyperion").owlCarousel({
+        margin: 0,
+        loop: true,
+        // autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        responsiveClass: true,
+        items: 1,
+        nav: false,
+        autoHeight: false,
+        autoHeightClass: 'owl-height'
+    });
 
     $('.hamburger-btn').click(function(){
         $('.main-header').slideToggle();
