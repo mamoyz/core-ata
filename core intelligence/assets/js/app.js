@@ -10,6 +10,11 @@ $(function() {
         nav: false,
     });
 
+    $('.hamburger-btn').click(function(){
+        $('.main-header').slideToggle();
+
+    })
+
     particlesJS("particles-js", {
             "particles": {
                 "number": {
@@ -119,8 +124,6 @@ $(function() {
                 }
             },
             "retina_detect": true
-        }
-
-    );
+        });
 
 });
