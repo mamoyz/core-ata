@@ -23,6 +23,58 @@ h5,
 h6 {
   font-family: 'Poppins', sans-serif; }
 
+.top-header .logo {
+  width: 370px;
+  padding-top: 30px; }
+  .top-header .logo img {
+    width: 100%; }
+.top-header .hamburger-btn {
+  display: none; }
+  .top-header .hamburger-btn span {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 5px;
+    display: block;
+    background-color: #fff; }
+    .top-header .hamburger-btn span:last-child {
+      margin-bottom: 0; }
+
+.main-header nav {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center; }
+  .main-header nav ul {
+    display: flex;
+    width: 100%;
+    overflow: hidden; }
+    .main-header nav ul li:last-child a:after {
+      display: none; }
+    .main-header nav ul li:last-child a:before {
+      background-color: rgba(255, 255, 255, 0.4);
+      content: " ";
+      width: 100vw;
+      height: 1px;
+      position: absolute;
+      left: calc(100% + 30px);
+      top: 50%; }
+    .main-header nav ul li a {
+      color: #fff;
+      position: relative;
+      margin-right: 60px;
+      font: 500 20px/24px Lato;
+      display: block; }
+      .main-header nav ul li a:hover {
+        text-decoration: none; }
+      .main-header nav ul li a:after {
+        content: "";
+        position: absolute;
+        margin-left: 25px;
+        width: 1px;
+        height: 16px;
+        background-color: #fff;
+        bottom: 0; }
+
 #particles-js {
   background-color: transparent;
   background: url("../images/bg.jpg");
@@ -51,56 +103,6 @@ h6 {
   #particles-js .top-content {
     position: relative;
     z-index: 2; }
-  #particles-js .top-header .logo {
-    width: 370px;
-    padding-top: 30px; }
-    #particles-js .top-header .logo img {
-      width: 100%; }
-  #particles-js .top-header .hamburger-btn {
-    display: none; }
-    #particles-js .top-header .hamburger-btn span {
-      width: 40px;
-      height: 3px;
-      margin-bottom: 5px;
-      display: block;
-      background-color: #fff; }
-      #particles-js .top-header .hamburger-btn span:last-child {
-        margin-bottom: 0; }
-  #particles-js .main-header nav {
-    margin-top: 30px;
-    position: relative;
-    display: flex;
-    align-items: center; }
-    #particles-js .main-header nav ul {
-      display: flex;
-      width: 100%;
-      overflow: hidden; }
-      #particles-js .main-header nav ul li:last-child a:after {
-        display: none; }
-      #particles-js .main-header nav ul li:last-child a:before {
-        background-color: rgba(255, 255, 255, 0.4);
-        content: " ";
-        width: 100vw;
-        height: 1px;
-        position: absolute;
-        left: calc(100% + 30px);
-        top: 50%; }
-      #particles-js .main-header nav ul li a {
-        color: #fff;
-        position: relative;
-        margin-right: 60px;
-        font: 500 20px/24px Lato;
-        display: block; }
-        #particles-js .main-header nav ul li a:hover {
-          text-decoration: none; }
-        #particles-js .main-header nav ul li a:after {
-          content: "";
-          position: absolute;
-          margin-left: 25px;
-          width: 1px;
-          height: 16px;
-          background-color: #fff;
-          bottom: 0; }
   #particles-js .centered {
     color: #fff; }
     #particles-js .centered h1 {
@@ -355,27 +357,119 @@ footer {
           font: 400 18px/22px Lato;
           letter-spacing: 0.54px; }
 
+.page-header {
+  background: transparent linear-gradient(89deg, #600064 0%, #C80066 100%) 0% 0% no-repeat padding-box; }
+  .page-header .top-content {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .page-header .top-content .top-header .logo {
+      padding-top: 0; }
+  .page-header nav ul li:last-child a:before {
+    display: none; }
+  .page-header nav ul li a:after {
+    display: none; }
+
+.about-us-page {
+  padding-top: 80px;
+  padding-bottom: 150px; }
+  .about-us-page .about-title {
+    font: 700 48px/69px Poppins;
+    color: #FF5C66; }
+    .about-us-page .about-title span {
+      color: #7E7E7E; }
+  .about-us-page .about-description {
+    margin-top: 50px; }
+    .about-us-page .about-description p {
+      font: 400 19px/34px Lato; }
+  .about-us-page .about-btns {
+    margin-top: 60px;
+    display: flex; }
+    .about-us-page .about-btns .btn-about {
+      font: 400 20px/37px Lato;
+      text-transform: uppercase;
+      padding: 15px 55px;
+      border-radius: 80px;
+      display: inline-block;
+      box-shadow: 0px 0px 75px #0000003D;
+      transition: all 300ms;
+      margin-right: 15px; }
+    .about-us-page .about-btns .btn-red {
+      background-color: #FF5C66;
+      color: #fff; }
+      .about-us-page .about-btns .btn-red:hover {
+        background-color: #ff5c66e0; }
+    .about-us-page .about-btns .btn-white {
+      border: 2px solid #0084FF; }
+  .about-us-page .about-pic {
+    border: 18px solid #0084FF0F;
+    box-shadow: 0px 3px 62px #0000002B;
+    border-radius: 30px;
+    overflow: hidden; }
+  .about-us-page .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1315px !important; } }
+@media (max-width: 1400px) {
+  .about-us-page .about-title {
+    font: 700 44px/69px Poppins;
+    color: #FF5C66; }
+    .about-us-page .about-title span {
+      color: #7E7E7E; }
+  .about-us-page .about-btns .btn-about {
+    padding: 10px 30px; } }
+@media (max-width: 1200px) {
+  .about-us-page {
+    padding-bottom: 70px; }
+    .about-us-page .about-btns {
+      justify-content: center; }
+      .about-us-page .about-btns .btn-about {
+        margin-bottom: 40px; }
+        .about-us-page .about-btns .btn-about div {
+          justify-content: center; } }
+@media (max-width: 768px) {
+  .about-us-page {
+    padding-top: 40px; }
+    .about-us-page .about-description {
+      margin-top: 25px; } }
 @media (max-width: 767px) {
-  #particles-js .top-header {
+  .top-header {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    #particles-js .top-header .hamburger-btn {
+    .top-header .hamburger-btn {
       display: block !important;
       padding-top: 30px; }
-  #particles-js .main-header {
+
+  .main-header {
     display: none; }
-    #particles-js .main-header nav ul {
+    .main-header nav ul {
       flex-direction: column;
       text-align: center; }
-      #particles-js .main-header nav ul li a {
+      .main-header nav ul li a {
         margin-right: 0 !important;
         padding: 10px 0; }
-        #particles-js .main-header nav ul li a:after {
+        .main-header nav ul li a:after {
           display: none; }
-  #particles-js .centered h1 {
+
+  .centered h1 {
     font: 600 40px/50px Poppins;
     margin-top: 40px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .page-header .hamburger-btn {
+    padding-top: 0 !important; } }
+@media (max-width: 576px) {
+  .about-us-page {
+    padding-bottom: 35px; }
+    .about-us-page .about-btns {
+      flex-direction: column; }
+      .about-us-page .about-btns .btn-about {
+        margin-bottom: 20px; }
+        .about-us-page .about-btns .btn-about div {
+          justify-content: center; } }
 
 /*# sourceMappingURL=main.css.map */

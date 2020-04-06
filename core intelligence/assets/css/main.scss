@@ -29,39 +29,7 @@ h5,
 h6 {
     font-family: 'Poppins', sans-serif;
 }
-
-#particles-js {
-    background-color: transparent;
-    background: url('../images/bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-    &:after {
-        content: " ";
-        position: absolute;
-        background: url('../images/wave.svg') no-repeat;
-        width: 100vw;
-        height: 9vw;
-        bottom: -2px;
-        left: 0;
-        right: 0;
-        z-index: 50;
-    }
-    .particles-js-canvas-el {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1
-    }
-    .top-content {
-        position: relative;
-        z-index: 2;
-    }
-    .top-header {
+ .top-header {
         .logo {
             width: 370px;
             padding-top: 30px;
@@ -83,6 +51,7 @@ h6 {
         	}
         }
     }
+
     .main-header {
         nav {
             margin-top: 30px;
@@ -131,6 +100,37 @@ h6 {
                 }
             }
         }
+    }
+#particles-js {
+    background-color: transparent;
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: " ";
+        position: absolute;
+        background: url('../images/wave.svg') no-repeat;
+        width: 100vw;
+        height: 9vw;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        z-index: 50;
+    }
+    .particles-js-canvas-el {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1
+    }
+    .top-content {
+        position: relative;
+        z-index: 2;
     }
     .centered {
         color: #fff;
@@ -461,13 +461,151 @@ footer {
         }
     }
 }
+.page-header {
+	background: transparent linear-gradient(89deg, #600064 0%, #C80066 100%) 0% 0% no-repeat padding-box;
+	 .top-content {
+	 	padding-top: 30px;
+	 	padding-bottom: 30px;
+		.top-header {
+		  	.logo {
+		  		padding-top: 0;
+		  	}
+		  }
+	 }
+	 nav {
+	 	ul {
+	 		li {
+	 			&:last-child {
+	 				a {
+	 					&:before {
+	 						display: none;
+	 					}
+	 				}
+	 			}
+	 			a {
+	 				&:after {
+	 					display: none;
+	 				}
+	 			}
+	 		}
+	 	}
+	 }
+
+}
+// ABOUT PAGE
+.about-us-page {
+	padding-top: 80px;
+	padding-bottom: 150px;
+	.about-title {
+		font: 700 48px/69px Poppins;
+		color: #FF5C66;
+		span {
+			color: #7E7E7E;
+		}
+	}
+	.about-description {
+		margin-top: 50px;
+		p {
+			font: 400 19px/34px Lato;
+		}
+	}
+	.about-btns {
+		margin-top: 60px;
+		display: flex;
+		.btn-about {
+            font: 400 20px/37px Lato;
+			text-transform: uppercase;
+			padding: 15px 55px;
+			border-radius: 80px;
+			display: inline-block;
+			box-shadow: 0px 0px 75px #0000003D;
+			transition: all 300ms;
+			margin-right: 15px;
+
+		}
+		.btn-red {
+			background-color: #FF5C66;
+			color: #fff;
+			&:hover {
+				background-color: #ff5c66e0;
+			}
+
+		}
+		.btn-white {
+			border: 2px solid #0084FF;
+        
+		}
+	}
+	.about-pic {
+		border: 18px solid #0084FF0F;
+		box-shadow: 0px 3px 62px #0000002B;
+		border-radius: 30px;
+		overflow: hidden;
+		img {
+		  
+		}
+	}
+	.left-side {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
 
 
 // Media
+@media(min-width: 1400px) {
+	.container {
+		max-width: 1315px !important;
+	}
+}
+@media(max-width: 1400px) {
+	.about-us-page {
+	.about-title {
+		font: 700 44px/69px Poppins;
+		color: #FF5C66;
+		span {
+			color: #7E7E7E;
+		}
+	}
+	.about-btns {
+		.btn-about {
+			padding: 10px 30px;
+		}
+	}
+}
 
+}
+@media(max-width: 1200px) {
+	.about-us-page {
+		padding-bottom: 70px;
+		.about-title {
+
+		}
+		.about-btns {
+		justify-content: center;
+			.btn-about {
+				margin-bottom: 40px;
+				div {
+					justify-content: center;
+				}
+
+			}
+
+		}
+	}
+}
+@media(max-width: 768px) {
+	.about-us-page {
+		padding-top: 40px;
+		.about-description {
+			margin-top: 25px;
+		}
+	}
+}
 @media(max-width: 767px) {
-	#particles-js {
-		.top-header {
+	.top-header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -505,5 +643,29 @@ footer {
 			margin-bottom: 20px;
 		}
 	}
+	.page-header {
+		.hamburger-btn {
+			padding-top: 0 !important;
+		}
 	}
-}
+  }
+  @media(max-width: 576px) {
+  	.about-us-page {
+		padding-bottom: 35px;
+		.about-title {
+
+		}
+		.about-btns {
+		flex-direction: column;
+			.btn-about {
+				margin-bottom: 20px;
+				div {
+					justify-content: center;
+				}
+
+			}
+
+		}
+	}
+
+  }
